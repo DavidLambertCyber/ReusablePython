@@ -882,6 +882,11 @@ def get_md5_dict(a_filePath): # parse a directory for all files, get md5, return
     
   return dict_of_md5
   
+def is_name_in_path_list(self,apath: Path,alistofpaths: list):
+    for somepath in alistofpaths:
+      if apath.name == somepath.name:
+        return True
+    return False
 
 
 def example_create_dict_of_lists():
